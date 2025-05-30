@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "My Blog",
+  title: "WPCreative",
   description: "A minimalist blog built with Next.js and markdown",
 };
 

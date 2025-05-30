@@ -7,7 +7,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-black hover:text-gray-700 transition-colors">
-              Blog
+              WPCreative
             </Link>
           </div>
           
