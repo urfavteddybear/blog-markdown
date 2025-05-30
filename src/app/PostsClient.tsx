@@ -59,14 +59,13 @@ export default function PostsClient({ posts, tags }: PostsClientProps) {
     } else if (!searchQuery && currentSearchQuery) {
       setSearchResults(posts)
       setCurrentSearchQuery('')
-    }
-  }, [searchQuery, posts, currentSearchQuery])
+    }  }, [searchQuery, posts, currentSearchQuery])
+  
   // Paginate the current search results
   const paginationResult = paginateArray(searchResults, currentPage, POSTS_PER_PAGE)
-  return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      {/* Hero Section */}
-      <div className="text-center mb-12">
+    return (
+    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">      {/* Hero Section */}
+      <div className="text-center mb-12 mt-8">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
           Welcome to WPCreative Blog
         </h1>
