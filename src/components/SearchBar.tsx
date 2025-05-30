@@ -20,18 +20,15 @@ export default function SearchBar({
   useEffect(() => {
     setQuery(initialValue)
   }, [initialValue])
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    onSearch(query)
+    onSearch(query.trim())
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const newQuery = e.target.value
     setQuery(newQuery)
-    onSearch(newQuery)
   }
-
   return (
     <form onSubmit={handleSubmit} className="relative w-full max-w-md">
       <div className="relative">
@@ -41,8 +38,14 @@ export default function SearchBar({
           value={query}
           onChange={handleChange}
           placeholder={placeholder}
-          className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200"
+          className="w-full pl-10 pr-12 py-2 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-200"
         />
+        <button
+          type="submit"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 px-2 py-1 text-sm text-gray-500 hover:text-black transition-colors duration-200"
+        >
+          Enter
+        </button>
       </div>
     </form>
   )

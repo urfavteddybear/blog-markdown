@@ -23,35 +23,44 @@ export default function PostsClient({ posts, tags }: PostsClientProps) {
   
   const [searchResults, setSearchResults] = useState(posts)
   const [currentSearchQuery, setCurrentSearchQuery] = useState('')
-  
-  // Get current page from URL params
+    // Get current page from URL params
   const currentPage = parseInt(searchParams.get('page') || '1', 10)
   const searchQuery = searchParams.get('search') || ''
 
   const handleSearch = useCallback((query: string) => {
-    const results = searchPosts(posts, query)
-    const filteredPosts = results.map(result => result.item)
-    setSearchResults(filteredPosts)
-    setCurrentSearchQuery(query)
-    
-    // Update URL with search query and reset to page 1
-    const params = new URLSearchParams()
-    if (query) {
-      params.set('search', query)
+    if (query.trim() === '') {
+      // If search is empty, show all posts
+      setSearchResults(posts)
+      setCurrentSearchQuery('')
+      
+      // Remove search parameter from URL
+      router.replace('/')
+    } else {
+      // Perform search
+      const results = searchPosts(posts, query.trim())
+      const filteredPosts = results.map(result => result.item)
+      setSearchResults(filteredPosts)
+      setCurrentSearchQuery(query.trim())
+      
+      // Update URL with search query and reset to page 1
+      const params = new URLSearchParams()
+      params.set('search', query.trim())
+      router.replace(`/?${params.toString()}`)
     }
-    router.push(`/?${params.toString()}`)
   }, [posts, router])
-
   // Initialize search on mount if there's a search query in URL
   useEffect(() => {
     if (searchQuery && searchQuery !== currentSearchQuery) {
-      handleSearch(searchQuery)
+      // Perform search directly without calling handleSearch to avoid loops
+      const results = searchPosts(posts, searchQuery)
+      const filteredPosts = results.map(result => result.item)
+      setSearchResults(filteredPosts)
       setCurrentSearchQuery(searchQuery)
     } else if (!searchQuery && currentSearchQuery) {
       setSearchResults(posts)
       setCurrentSearchQuery('')
     }
-  }, [searchQuery, posts, currentSearchQuery, handleSearch])
+  }, [searchQuery, posts, currentSearchQuery])
   // Paginate the current search results
   const paginationResult = paginateArray(searchResults, currentPage, POSTS_PER_PAGE)
   return (
