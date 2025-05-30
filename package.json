@@ -6,7 +6,11 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:build": "docker build -t blog-next .",
+    "docker:run": "docker run -d -p 3000:3000 --name blog blog-next",
+    "docker:stop": "docker stop blog && docker rm blog",
+    "deploy": "npm run build && npm run start"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
