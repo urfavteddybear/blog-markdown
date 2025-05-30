@@ -3,7 +3,7 @@ title: "Advanced SSH Configuration and Security: Hardening Your Linux Server"
 date: "2025-01-19"
 description: "Comprehensive guide to securing SSH access with key authentication, fail2ban, advanced configurations, and monitoring best practices."
 tags: ["ssh", "security", "linux", "sysadmin", "hardening", "authentication"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Advanced SSH Configuration and Security: Hardening Your Linux Server

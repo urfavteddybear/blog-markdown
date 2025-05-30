@@ -3,7 +3,7 @@ title: "Complete Git Server Setup with Gitea: Self-Hosted Git Repository Managem
 date: "2025-01-18"
 description: "Learn how to set up and configure Gitea, a lightweight self-hosted Git service, including installation, SSL configuration, and advanced features."
 tags: ["git", "gitea", "self-hosted", "version-control", "devops", "linux"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Complete Git Server Setup with Gitea: Self-Hosted Git Repository Management
@@ -478,7 +478,7 @@ ENABLE_FEDERATED_AVATAR = true
 [attachment]
 ENABLED = true
 PATH = /var/lib/gitea/data/attachments
-ALLOWED_TYPES = image/jpeg|image/png|application/zip|application/gzip
+ALLOWED_TYPES = image/jpeg|image/webp|application/zip|application/gzip
 MAX_SIZE = 4
 MAX_FILES = 5
 

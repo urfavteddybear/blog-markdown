@@ -3,7 +3,7 @@ title: "Setting Up Nginx Web Server: From Installation to SSL Configuration"
 date: "2025-01-15"
 description: "Complete guide to installing, configuring, and securing Nginx web server with SSL certificates, virtual hosts, and performance optimization."
 tags: ["nginx", "web-server", "ssl", "linux", "devops", "security"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Setting Up Nginx Web Server: From Installation to SSL Configuration

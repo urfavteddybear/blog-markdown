@@ -3,7 +3,7 @@ title: "Next.js and Markdown: A Perfect Match"
 date: "2025-05-28"
 description: "Learn how to build a blog with Next.js and markdown files for easy content management."
 tags: ["nextjs", "markdown", "react", "javascript"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Next.js and Markdown: A Perfect Match

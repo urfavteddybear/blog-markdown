@@ -3,7 +3,7 @@ title: "Setting Up Docker on Ubuntu and Debian: Complete Guide"
 date: "2024-01-25"
 description: "A comprehensive tutorial on installing and configuring Docker on Ubuntu and Debian systems, including best practices and troubleshooting."
 tags: ["docker", "ubuntu", "debian", "linux", "containers", "devops"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Setting Up Docker on Ubuntu and Debian: Complete Guide

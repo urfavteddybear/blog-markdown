@@ -3,7 +3,7 @@ title: "Mastering Linux System Monitoring with htop, iostat, and sar"
 date: "2025-01-16"
 description: "Learn essential Linux monitoring tools to track system performance, diagnose bottlenecks, and optimize server resources effectively."
 tags: ["linux", "monitoring", "performance", "htop", "iostat", "sar", "sysadmin"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Mastering Linux System Monitoring with htop, iostat, and sar

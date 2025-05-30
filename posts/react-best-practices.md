@@ -3,7 +3,7 @@ title: "React Best Practices in 2024"
 date: "2024-01-15"
 description: "Essential patterns and practices for building maintainable React applications in 2024."
 tags: ["react", "javascript", "best-practices", "frontend"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # React Best Practices in 2024

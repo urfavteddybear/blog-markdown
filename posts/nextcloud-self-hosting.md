@@ -3,7 +3,7 @@ title: "Self-Hosting Essentials: Setting Up Nextcloud for Personal Cloud Storage
 date: "2024-01-18"
 description: "Learn how to set up your own Nextcloud instance for secure, private cloud storage and file synchronization across all your devices."
 tags: ["self-hosting", "nextcloud", "cloud-storage", "privacy", "docker", "linux"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Self-Hosting Essentials: Setting Up Nextcloud for Personal Cloud Storage

@@ -3,7 +3,7 @@ title: "Linux Command Line Mastery: Essential Commands Every Developer Should Kn
 date: "2024-01-20"
 description: "Master the Linux command line with this comprehensive guide covering essential commands, shortcuts, and advanced techniques for developers and system administrators."
 tags: ["linux", "command-line", "bash", "terminal", "productivity"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Linux Command Line Mastery: Essential Commands Every Developer Should Know

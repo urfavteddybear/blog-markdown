@@ -3,7 +3,7 @@ title: "Building Accessible Web Applications"
 date: "2024-01-05"
 description: "A comprehensive guide to creating inclusive web experiences that work for everyone."
 tags: ["accessibility", "web-development", "a11y", "inclusive-design"]
-image: "/images/Fallback.png"
+image: "/images/Fallback.webp"
 ---
 
 # Building Accessible Web Applications
