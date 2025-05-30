@@ -3,7 +3,7 @@ title: "Complete PostgreSQL Database Administration Guide for Linux"
 date: "2025-01-20"
 description: "Comprehensive tutorial covering PostgreSQL installation, configuration, backup strategies, performance tuning, and security hardening on Linux servers."
 tags: ["postgresql", "database", "linux", "administration", "backup", "performance"]
-image: "/images/Fallback.webp"
+image: "/images/postgresql-database-administration.webp"
 ---
 
 # Complete PostgreSQL Database Administration Guide for Linux

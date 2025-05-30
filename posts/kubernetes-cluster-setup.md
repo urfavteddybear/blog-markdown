@@ -3,7 +3,7 @@ title: "Building a Kubernetes Cluster from Scratch: kubeadm Installation Guide"
 date: "2025-01-17"
 description: "Step-by-step tutorial to set up a production-ready Kubernetes cluster using kubeadm, including networking, storage, and essential add-ons."
 tags: ["kubernetes", "kubeadm", "container-orchestration", "devops", "linux", "cluster"]
-image: "/images/Fallback.webp"
+image: "/images/kubernetes-cluster-setup.webp"
 ---
 
 # Building a Kubernetes Cluster from Scratch: kubeadm Installation Guide

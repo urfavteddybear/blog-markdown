@@ -3,7 +3,7 @@ title: "Building Your First Home Server: A Complete Beginner's Guide"
 date: "2024-01-22"
 description: "Learn how to build and configure your own home server from scratch, including hardware selection, OS installation, and essential services setup."
 tags: ["homeserver", "linux", "self-hosting", "hardware", "networking"]
-image: "/images/Fallback.webp"
+image: "/images/home-server-guide.webp"
 ---
 
 # Building Your First Home Server: A Complete Beginner's Guide

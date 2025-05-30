@@ -3,7 +3,7 @@ title: "TypeScript Tips for Better Code"
 date: "2024-01-10"
 description: "Advanced TypeScript techniques to write more robust and maintainable code."
 tags: ["typescript", "javascript", "programming", "types"]
-image: "/images/Fallback.webp"
+image: "/images/typescript-tips.webp"
 ---
 
 # TypeScript Tips for Better Code

@@ -3,7 +3,7 @@ title: "Building a Minimalist Design"
 date: "2025-05-29"
 description: "Exploring the principles of minimalist web design and how to implement them effectively."
 tags: ["design", "minimalism", "ui", "ux"]
-image: "/images/Fallback.webp"
+image: "/images/minimalist-design.webp"
 ---
 
 # Building a Minimalist Design
