@@ -3,6 +3,7 @@ title: "Performance Optimization for Web Applications"
 date: "2023-12-20"
 description: "Essential strategies for building fast, efficient web applications that provide excellent user experiences."
 tags: ["performance", "optimization", "web-development", "javascript"]
+image: "/images/Fallback.png"
 ---
 
 # Performance Optimization for Web Applications

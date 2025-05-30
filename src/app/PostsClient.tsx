@@ -52,7 +52,6 @@ export default function PostsClient({ posts, tags }: PostsClientProps) {
       setCurrentSearchQuery('')
     }
   }, [searchQuery, posts, currentSearchQuery, handleSearch])
-
   // Paginate the current search results
   const paginationResult = paginateArray(searchResults, currentPage, POSTS_PER_PAGE)
   return (
@@ -68,18 +67,15 @@ export default function PostsClient({ posts, tags }: PostsClientProps) {
         </p>
       </div>
 
-      {/* Search and Filter Section */}
-      <div className="flex flex-col lg:flex-row gap-8 mb-12">
-        <div className="lg:w-2/3">
+      {/* Search Bar - Centered */}
+      <div className="mb-12">
+        <div className="max-w-md mx-auto">
           <SearchBar onSearch={handleSearch} initialValue={searchQuery} />
-        </div>
-        <div className="lg:w-1/3">
-          <TagCloud tags={tags} />
         </div>
       </div>
 
       {/* Posts Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {paginationResult.items.length > 0 ? (
           paginationResult.items.map((post) => (
             <PostCard key={post.id} post={post} />
@@ -103,11 +99,20 @@ export default function PostsClient({ posts, tags }: PostsClientProps) {
 
       {/* Results count */}
       {searchResults.length > 0 && (
-        <div className="text-center mt-8 text-gray-500">
+        <div className="text-center mt-8 mb-12 text-gray-500">
           Showing {paginationResult.items.length} of {paginationResult.totalItems} posts
           {currentSearchQuery && ` for "${currentSearchQuery}"`}
         </div>
       )}
+
+      {/* Browse by Topic - Bottom Section */}
+      <div className="border-t border-gray-200 pt-12">
+        <div className="text-center mb-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Browse by Topic</h2>
+          <p className="text-gray-600">Explore posts by category</p>
+        </div>
+        <TagCloud tags={tags} />
+      </div>
     </div>
   )
 }

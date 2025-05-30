@@ -3,7 +3,7 @@ title: "Welcome to My Blog"
 date: "2025-05-30"
 description: "This is the first post on my new minimalist blog built with Next.js and markdown."
 tags: ["welcome", "blog", "nextjs"]
-image: "/images/ubuntu.webp"
+image: "/images/Fallback.png"
 ---
 
 # Welcome to My Blog

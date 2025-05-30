@@ -3,6 +3,7 @@ title: "Modern CSS Techniques for 2024"
 date: "2023-12-28"
 description: "Explore the latest CSS features and techniques that are transforming web design."
 tags: ["css", "web-design", "frontend", "styling"]
+image: "/images/Fallback.png"
 ---
 
 # Modern CSS Techniques for 2024
